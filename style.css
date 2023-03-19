@@ -203,7 +203,7 @@ button:active {
 @media (max-width: 800px) {
     /* Header styles */
     .header-container {
-        grid-template-columns: 55% 15% 15% 15%;
+        grid-template-columns: 40% 20% 20% 20%;
     }
     .logo {
         font-size: 25px;
