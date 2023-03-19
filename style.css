@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: #000000;
 }
 
 /* Header styles */
@@ -8,8 +9,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    padding-top: 1%;
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 55% 15% 15% 15%;
     align-items: left;
     min-height: 5%;
 }
@@ -27,8 +29,8 @@ body {
 .header-item {
     width: 80%;
     text-align: center;
-    margin-top: 15%;
-    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-bottom: 2%;
     border-radius: 25px;
     color: #DCDCDC;
     font-style: italic;
@@ -38,39 +40,39 @@ body {
 
 .header-container > a {
     text-decoration: none;
-    color: #696969;
 }
 
 .header-item:hover {
     cursor: pointer;
     background: #4B0082;
-    height: 40%;
 }
 /* about styles */
 .about {
     background: url("img/about.jpg");
-    background-size: 100%;
+    background-size: cover;
 }
 
 .about-header {
-    padding-top: 8%;
+    padding-top: 5%;
     padding-left: 20%;
     font-size: 60px;
     font-family: Cursive;
     color: #FAEBD7;
     font-style: italic;
-    margin: 0;
+    margin: 3%;
 }
 
 .about-text {
     width: 40%;
     padding-left: 10%;
-    font-size: 20px;
-    font-weight: bold;
+    padding-top: 3%;
     text-align: justify;
     color: #FFFFF0;
     padding-bottom: 10%;
     margin: 0;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
 /* feature styles */
@@ -89,17 +91,17 @@ body {
 
 .feature_blocks {
     background: url("img/features.jpg");
-    background-size: 100%;
-    min-height: 450px;
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    min-height: 450px;
+    padding-right: 30%;
 }
 
 .feature_b {
-    width: 40%;
-    padding-left: 3%;
-    padding-right: 3%;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .feature_b-header {
@@ -113,9 +115,15 @@ body {
 
 .feature_b-text {
     width: 100%;
-    font-size: 20px;
     text-align: justify;
     color: #FFFFF0;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    font-size: 18px;
+}
+li {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 /* button style */
 .open_bot{
@@ -189,18 +197,20 @@ button:active {
     text-decoration: none;
     color: gray;
 }
+
+
 /* adapt styles*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     /* Header styles */
     .header-container {
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 55% 15% 15% 15%;
     }
     .logo {
         font-size: 25px;
     }
         .header-item {
         font-weight: 500;
-        font-size: 10px;
+        font-size: 15px;
     }
     .header-item:hover {
         cursor: pointer;
@@ -213,25 +223,26 @@ button:active {
         background-size: 100%;
     }
     .about-header {
-        font-size: 12px;
-        padding-bottom: 3%;
+        font-size: 25px;
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
     .about-text {
         width: 48%;
         padding-left: 5%;
-        font-size: 9px;
-        padding-bottom: 15%;
+        font-size: 12px;
+        padding-top: 4%;
+        padding-bottom: 10%;
     }
     /* feature styles */
-    .features {
-        font-size: 13px;
+    .features-header {
+        font-size: 25px;
     }
     .feature_blocks {
-        background: url("img/features-mob.jpg");
-        background-size: 100%;
         display: flex;
         flex-direction: column;
         min-height: 250px;
+        padding-right: 15%;
     }
     .feature_b {
         width: 60%;
@@ -239,16 +250,15 @@ button:active {
     .feature_b-header {
         padding-top: 3%;
         padding-left: 30%;
-        font-size: 12px;
+        font-size: 25px;
     }
     .feature_b-text {
         width: 100%;
-        font-size: 12px;
-        padding-left: 20%;
+        font-size: 16px;
     }
     button {
-      padding: 1% 1%;
-      font-size: 10px;
+      padding: 2% 2%;
+      font-size: 20px;
     }
     .footer-container {
         display: flex;
@@ -263,4 +273,5 @@ button:active {
         font-size: 15px;
     }
 }
+
 
