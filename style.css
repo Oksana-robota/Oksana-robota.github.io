@@ -220,7 +220,7 @@ button:active {
     /* about styles */
     .about {
         background: url("img/about-mob.jpg");
-        background-size: 100%;
+        background-size: cover;
     }
     .about-header {
         font-size: 25px;
